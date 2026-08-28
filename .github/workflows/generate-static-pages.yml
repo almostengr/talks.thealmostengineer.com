@@ -35,3 +35,4 @@ jobs:
         source: "presentation_build/*"
         target: ${{ secrets.WWW_DIRECTORY }}
         strip_components: 1
+        overwrite: true
