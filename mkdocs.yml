@@ -1,0 +1,17 @@
+site_name: Talks
+site_url: https://talks.thealmostengineer.com
+repo_url: https://github.com/almostengr/talks.thealmostengineer.com
+site_author: Kenny Robinson
+copyright: "&copy; 2026 Kenny Robinson"
+use_directory_urls: true
+
+theme:
+  name: null
+  custom_dir: 'theme'
+  language: en
+
+strict: false
+
+plugins:
+  - minify:
+      minify_html: true

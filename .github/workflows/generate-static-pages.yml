@@ -1,0 +1,36 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches:
+      - 'main'
+
+jobs:
+  prod_release:
+    name: Production release
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out main branch
+      uses: actions/checkout@master
+      with:
+        ref: main
+
+    - run: /usr/bin/python3 -m pip install --upgrade setuptools
+    - run: /usr/bin/python3 -m pip install --upgrade mkdocs
+    - run: /usr/bin/python3 -m pip install --upgrade mkdocs-minify-plugin
+
+    - run: git fetch -p
+
+    - run: /usr/bin/python3 -m mkdocs build -f mkdocs.yml -d ../presentation_build
+      name: Build presentations
+
+    - name: presentation deployment
+      uses: appleboy/scp-action@v1
+      with:
+        host: ${{ secrets.HOSTNAME }}
+        username: ${{ secrets.USERNAME }}
+        port: ${{ secrets.PORT_NUMBER }}
+        key: ${{ secrets.PRIVATE_KEY }}
+        source: "presentation_build/*"
+        target: ${{ secrets.TALK_DIRECTORY }}
