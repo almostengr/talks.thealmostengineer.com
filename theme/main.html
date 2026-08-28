@@ -35,18 +35,20 @@
                 <ul class="navbar-nav ms-auto mb-2 mb-md-0">
                     {% if page and currentDirectory in page.previous_page.url %}
                     <li class="nav-item">
-                        <a id="previousLink" class="nav-link active" href="/{{ page.previous_page.url }}">
+                        <a id="previousLink" class="nav-link" href="/{{ page.previous_page.url }}">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                class="bi bi-skip-forward-fill" viewBox="0 0 20 20">
-                                <path
-                                    d="M.5 3.5A.5.5 0 0 0 0 4v8a.5.5 0 0 0 1 0V8.753l6.267 3.636c.54.313 1.233-.066 1.233-.697v-2.94l6.267 3.636c.54.314 1.233-.065 1.233-.696V4.308c0-.63-.693-1.01-1.233-.696L8.5 7.248v-2.94c0-.63-.692-1.01-1.233-.696L1 7.248V4a.5.5 0 0 0-.5-.5" />
-                            </svg>
+                            class="bi bi-skip-forward-fill" viewBox="0 0 20 20">
+                            <path
+                            d="M.5 3.5A.5.5 0 0 0 0 4v8a.5.5 0 0 0 1 0V8.753l6.267 3.636c.54.313 1.233-.066 1.233-.697v-2.94l6.267 3.636c.54.314 1.233-.065 1.233-.696V4.308c0-.63-.693-1.01-1.233-.696L8.5 7.248v-2.94c0-.63-.692-1.01-1.233-.696L1 7.248V4a.5.5 0 0 0-.5-.5" />
+                        </svg>
+                        Previous
                         </a>
                     </li>
                     {% endif %}
                     {% if page and currentDirectory in page.next_page.url %}
                     <li class="nav-item">
-                        <a id="nextLink" class="nav-link active" href="/{{ page.next_page.url }}">
+                        <a id="nextLink" class="nav-link" href="/{{ page.next_page.url }}">
+                            Next
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                 class="bi bi-skip-forward-fill" viewBox="0 0 20 20">
                                 <path
