@@ -22,7 +22,7 @@ jobs:
 
     - run: git fetch -p
 
-    - run: /usr/bin/python3 -m mkdocs build -f mkdocs.yml -d ../presentation_build
+    - run: /usr/bin/python3 -m mkdocs build -f mkdocs.yml -d presentation_build
       name: Build presentations
 
     - name: presentation deployment
