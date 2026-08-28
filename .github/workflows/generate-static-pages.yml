@@ -33,4 +33,4 @@ jobs:
         port: ${{ secrets.PORT_NUMBER }}
         key: ${{ secrets.PRIVATE_KEY }}
         source: "presentation_build/*"
-        target: ${{ secrets.TALK_DIRECTORY }}
+        target: ${{ secrets.WWW_DIRECTORY }}
