@@ -1,6 +1,6 @@
 # Hallucinations
 
-* AI making up stuff
+* AI can produce a response that is convincing and false
 * Can happen with referencing memory from other chats
 * Trust but verify
 
