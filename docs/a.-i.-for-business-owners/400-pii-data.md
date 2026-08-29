@@ -1,6 +1,6 @@
 # AI and Data Security
 
-* Constantly learning
+* Can learn from information provided
 * Scrub and sanitize
 * generatedata.com (creates data sets and test data)
 
