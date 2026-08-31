@@ -1,0 +1,61 @@
+site_name: APIs Without A Computer
+copyright: Copyright &copy; 2022 Robinson Handy and Technology Services LLC
+
+# repository information
+remote_name: origin
+remote_branch: website
+
+# Development server details
+# dev_addr: 192.168.1.103:8000
+
+# # Appearance
+theme:
+  name: material
+  language: en
+  font:
+    text: Ubuntu
+    code: Ubuntu Mono
+  palette:
+    - scheme: default
+      primary: black
+      accent: red
+  features:
+    - toc.integrate
+
+nav:
+  # introduction
+  - "index.md"
+  - introduction.md
+  - objectives.md
+  - whoiscoursefor.md
+
+  - whatisinterface.md
+  - whatisapi1.md
+  - whatisapi2.md
+
+  # formats
+  - apiformats.md
+  - whydifferentformats.md
+  - xmlformat.md
+  - jsonformat.md
+  
+  # common request methods
+  - get.md
+  - post.md
+  - put.md
+  - patch.md
+  - delete.md
+  - head.md
+
+  # versioning
+  - versioning.md
+  - version10.md
+  - version20.md
+  - version21.md
+  - version30.md
+  - version31.md
+
+  - conclusion.md
+
+extra:
+  generator: false

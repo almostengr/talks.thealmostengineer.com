@@ -1,0 +1,49 @@
+site_name: GitHub 101
+copyright: Copyright &copy; 2022 Robinson Handy and Technology Services LLC
+
+# repository information
+remote_name: origin
+remote_branch: website
+
+# Development server details
+# dev_addr: 192.168.1.103:8000
+
+# # Appearance
+theme:
+  name: material
+  language: en
+  font:
+    text: Ubuntu
+    code: Ubuntu Mono
+  palette:
+    - scheme: default
+      primary: black
+      accent: red
+  features:
+    - toc.integrate
+
+nav:
+  - "index.md"
+  
+  - history/versioncontrol.md
+  - history/githubExplained.md
+  - history/git-and-github.md
+
+  - repositories/commits.md
+  - repositories/repository.md
+  - repositories/branches.md
+  - repositories/fork.md
+  - repositories/star.md
+
+  - issues/reportingBugsOrErrors.md
+  - issues/requestingFeatures.md
+  - issues/resolvingIssues.md
+  
+  - pull-requests/pullRequests.md
+  - pull-requests/approveOrReject.md
+
+  - features/actions.md
+  - features/pages.md
+  # - features/specialRepository.md
+
+  - conclusion.md
